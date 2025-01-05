@@ -31,7 +31,7 @@ const ReservationForm = () => {
     setLoading(true);
 
     try {
-      const res = await axios.get(`http://localhost:8088/available-slots`, {
+      const res = await axios.get(`https://backend-table-booking-app.onrender.com//available-slots`, {
         params: { date: date.toISOString().split("T")[0] },
       });
       setAvailableSlots(res.data?.availableSlots);
@@ -52,7 +52,7 @@ const ReservationForm = () => {
     }
   
     try {
-      const res = await fetch("http://localhost:8088/post-booking", {
+      const res = await fetch("https://backend-table-booking-app.onrender.com/post-booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
