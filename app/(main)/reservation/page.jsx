@@ -31,7 +31,7 @@ const ReservationForm = () => {
     setLoading(true);
 
     try {
-      const res = await axios.get(`https://backend-table-booking-app.onrender.com//available-slots`, {
+      const res = await axios.get(`https://backend-table-booking-app.onrender.com/available-slots`, {
         params: { date: date.toISOString().split("T")[0] },
       });
       setAvailableSlots(res.data?.availableSlots);
