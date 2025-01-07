@@ -43,7 +43,7 @@ This will start the Next.js development server on [http://localhost:3000](http:/
 
 ## Features Breakdown
 
-# Booking Form
+### Booking Form
 
 - Users can input:
 
@@ -53,16 +53,16 @@ This will start the Next.js development server on [http://localhost:3000](http:/
 
 - The form validates the inputs to ensure proper data entry.
 
-# Availability Display
+### Availability Display
 
 - Shows available time slots based on the selected date and time.
 - Prevents double bookings by checking the backend availability.
 
-# Booking Confirmation
+### Booking Confirmation
 
 - After a successful booking, the system displays a confirmation message and a summary of the reservation details.
 
-# Calendar View (Bonus)
+### Calendar View (Bonus)
 
 - Users can select a date and time visually from a calendar or timeline view, simplifying the booking process.
 
